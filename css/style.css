@@ -776,7 +776,7 @@ footer {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
 }
 .portfolio-title {
     margin-top: 4px;
@@ -835,4 +835,59 @@ footer {
     border: 1px solid rgba(0, 0, 0, 0.1);
 
     cursor: pointer;
+}
+
+                /*---------------modal-form--------------*/
+
+.form-text {
+    margin-top: 40px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color)
+}
+.form-label {
+    display: block;
+    margin-top: 12px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--accent-text-color)
+}
+.form-control {
+    position: relative;
+    margin-top: 4px;
+}
+.form-input {
+    
+    width: 448px;
+    height: 40px;
+    padding: 12px 11px 11px 32px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    outline: none;
+}
+.form-input:focus {
+    border-color: var(--primary-bg-color);
+}
+.form-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    fill: currentColor;
+}
+.form-input:focus + .form-icon {
+    fill: var(--primary-bg-color);
 }
