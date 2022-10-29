@@ -388,7 +388,7 @@
             </svg>
         </button>
         <h2 class="form-text">Залиште свої дані, ми вам передзвонимо</h2>
-        <form name="contact-form">
+        <form name="contact-form" autocomplete="off">
             <label class="form-label" for="person-name">Ім'я</label>
             <div class="form-control">
                 <input class="form-input" id="person-name" type="text" name="person-name">
@@ -413,7 +413,25 @@
                 </svg>
             </div>
 
-            
+            <label class="form-label" for="person-comment">Коментар</label>
+                <textarea 
+                class="form-textarea" 
+                id="person-comment" 
+                name="person-comment" 
+                placeholder="Введіть текст"
+                ></textarea>
+
+                <input
+                 class="checkbox-input visually-hidden" 
+                 id="terms-checkbox" 
+                 type="checkbox" 
+                 name="terms-checkbox">
+                <label class="checkbox-label" for="terms-checkbox">
+                    Погоджуюся з розсилкою та приймаю 
+                    <a class="form-label-color" href="">Умови договору</a>
+                </label>
+
+                <button class="submit-button" type="submit">Відправити</button>
         </form>
     </div>
 </div>

@@ -39,6 +39,18 @@ footer {
 .link {
     text-decoration: none;
 }
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 
 .container {
     width: 1200px;
@@ -837,12 +849,15 @@ footer {
 
     cursor: pointer;
 }
+.modal-close-button:focus,
+.modal-close-button:hover {
+    fill:  #188CE8;
+}
 
-                /*---------------modal-form--------------*/
+
+                               /*---------------modal-form--------------*/
 
 .form-text {
-    margin-top: 40px;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -890,4 +905,66 @@ footer {
 }
 .form-input:focus + .form-icon {
     fill: var(--primary-bg-color);
+}
+.form-textarea {
+    width: 448px;
+    height: 120px;
+    padding: 12px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+}
+.form-label-color {
+    color: var(--primary-bg-color);
+}
+
+
+                          /*------------checkbox------------*/
+
+
+.checkbox-label {
+    position: relative;
+    padding-left: 24px;
+}
+.checkbox-label::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--primary-text-color);
+    border-radius: 2px;
+}
+.checkbox-label::after {
+    position: absolute;
+    content: '';
+}
+
+.submit-button {
+    display: block;
+    padding: 10px 52px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.submit-button:hover,
+.submit-button:focus {
+    background-color: #188CE8;
 }
