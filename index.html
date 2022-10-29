@@ -433,15 +433,18 @@
                 placeholder="Введіть текст"
                 ></textarea>
                 
-                <input
-                 class="checkbox-input visually-hidden" 
-                 id="terms-checkbox" 
-                 type="checkbox" 
-                 name="terms-checkbox">
-                <label class="checkbox-label" for="terms-checkbox">
-                    Погоджуюся з розсилкою та приймаю 
-                    <a class="form-label-color" href="">Умови договору</a>
-                </label>
+                <div class="checkbox-modal">
+                    <input class="checkbox-input visually-hidden" id="terms-checkbox" type="checkbox" name="terms-checkbox">
+                    <label class="checkbox-label" for="terms-checkbox">
+                        <span>
+                            <svg class="checkbox-icon" width="16" height="15">
+                                <use href="./images/symbol-defs.svg#icon-checkbox"></use>
+                            </svg>
+                        </span>
+                        Погоджуюся з розсилкою та приймаю
+                        <a href="">Умови договору</a>
+                    </label>
+                </div>
 
                 <button class="submit-button" type="submit">Відправити</button>
         </form>
